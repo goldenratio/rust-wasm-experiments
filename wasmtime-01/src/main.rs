@@ -1,4 +1,4 @@
-use wasmtime::*;
+use wasmtime::{Engine, Linker, Module, Store};
 use wasmtime_wasi::WasiCtxBuilder;
 
 fn main() {
