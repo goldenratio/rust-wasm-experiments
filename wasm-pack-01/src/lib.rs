@@ -9,5 +9,5 @@ extern "C" {
 
 #[wasm_bindgen]
 pub fn add_num(num_1: i32, num_2: i32) -> i32 {
-    num_1 * num_2
+    num_1 + num_2
 }
