@@ -20,5 +20,6 @@ fn main() {
         .get_typed_func::<(u32, u32), u32>(&mut store, "add_num")
         .unwrap();
 
-    println!("{}", add_fn.call(&mut store, (1, 2)).unwrap());
+    let result = add_fn.call(&mut store, (1, 2)).unwrap();
+    println!("{}", result);
 }
